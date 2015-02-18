@@ -1,0 +1,30 @@
+html, body, div, span, 
+h1, h2, h3, h4, p,
+a, address,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+  {
+  margin:0; padding:0; border:0;
+  font-weight:inherit; font-style:inherit; font-size:100%; font-family:inherit;
+  vertical-align:baseline;
+  }
+
+img, a img
+  {border: none;}
+  
+html, body {
+	height:100%;
+}
+
+body
+  {line-height:1.36; background: #fff; margin:0; padding-top:20px;}
+  
+/* Clearing without structural markup */
+
+.clear
+  {display: inline-block;}   
+.clear:after
+  {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+* html .clear
+  {height: 1%;}
+.clear
+  {display: block;}

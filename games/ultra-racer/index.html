@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, minimal-ui">
+	<title>Ultra Racer</title>
+	<link href="../../css/main.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		body {
+			background:#222;
+		}
+		div {
+			padding: 4em;
+		}
+		object, embed {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 960px;
+			height: 640px;
+			margin: -320px 0 0 -480px;
+		}
+	</style>
+</head>
+<body>
+	<div id="flash-content">
+		<h1>Sorry</h1>
+		<p>You need <a href="http://www.adobe.com/go/getflashplayer">Flash Player</a> to play this game.</p>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+	<script>
+		var flashvars = {};
+		var params = { menu: false, allowFullScreen: true, allowScriptAccess: 'always', wmode: 'direct' };
+		var attributes = { id: 'Flash', name: 'Flash' };
+		swfobject.embedSWF('Main.swf', 'flash-content', '960', '640', '11.5.0', '', flashvars, params, attributes);
+	</script>
+	<script>
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-38976040-3']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</body>
+</html>
